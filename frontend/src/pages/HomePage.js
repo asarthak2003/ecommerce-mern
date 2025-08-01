@@ -8,9 +8,7 @@ export default function HomePage() {
 
   useEffect(() => {
     axios
-      .get('https://YOUR_RENDER_BACKEND_URL/api/products') 
-      // ↑↑ REPLACE `https://YOUR_RENDER_BACKEND_URL` 
-      // WITH YOUR RENDER BACKEND DEPLOY URL
+      .get('https://ecommerce-mern-vvb2.onrender.com/api/products')  // ← Your deployed backend URL
       .then((res) => setProducts(res.data))
       .catch((err) => console.log(err));
   }, []);
